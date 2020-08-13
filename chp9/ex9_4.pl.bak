@@ -1,0 +1,10 @@
+#!/usr/bin/perl 
+use strict;
+use warnings;
+
+$^I = ".bak";
+my $lines = join "", <>;
+$lines =~ s/^/a) ## Copyright (C) 20XX by Yours Truly\n/;
+print $lines;
+
+
